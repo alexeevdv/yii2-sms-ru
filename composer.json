@@ -1,0 +1,27 @@
+{
+    "name": "alexeevdv/yii2-sms-ru",
+    "description": "Yii2 wrapper for sms.ru API",
+    "keywords": ["yii2", "sms", "sms.ru", "api"],
+    "type": "yii2-extension",
+    "license": "MIT",
+    "support": {
+        "source": "https://github.com/alexeevdv/yii2-sms-ru",
+        "issues": "https://github.com/alexeevdv/yii2-sms-ru/issues"
+    },
+    "authors": [
+        {
+            "name": "alexeevdv",
+            "homepage": "https://alexeevdv.ru/",
+            "email": "mail@alexeevdv.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "alexeevdv\\sms-ru\\": ""
+        }
+    }
+}
