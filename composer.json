@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "alexeevdv\\sms-ru\\": ""
+            "alexeevdv\\sms\\ru\\": ""
         }
     }
 }

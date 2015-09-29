@@ -1,6 +1,6 @@
 <?php
 
-namespace alexeevdv\sms-ru;
+namespace alexeevdv\sms\ru;
 
 class Client extends \yii\base\Component {
 
@@ -13,5 +13,9 @@ class Client extends \yii\base\Component {
         if (empty($this->api_id)){
             throw new \yii\base\InvalidConfigException("`api_id` param is required.");
         }
+    }
+
+    public function send(\alexeevdv\sms\ru\Sms $sms) {
+        var_dump($sms);
     }
 }
