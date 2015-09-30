@@ -2,11 +2,27 @@
 
 namespace alexeevdv\sms\ru;
 
-class Sms extends \yii\base\Component {
+class Sms extends \yii\base\Model {
+
+    /**
+     * Sms identificator
+     * @var string
+     */
+    public $id;
+
+    /**
+     * Sms sending result
+     * @var integer
+     */
+    public $code = -1;
 
     public $to;
 
     public $text;
+
+    public $test;
+
+    public $translit = false;
 
     public function init() {
 
