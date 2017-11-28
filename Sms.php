@@ -16,6 +16,8 @@ class Sms extends \yii\base\Model {
      */
     public $code = -1;
 
+    public $from;
+
     public $to;
 
     public $text;
