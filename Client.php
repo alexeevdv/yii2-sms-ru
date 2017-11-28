@@ -6,6 +6,8 @@ class Client extends \yii\base\Component {
 
     public $api_id;
 
+    public $from;
+
     public $test;
 
     const HTTP_URL = "http://sms.ru/";
@@ -28,6 +30,10 @@ class Client extends \yii\base\Component {
 
         if ($this->test || $sms->test) {
             $data['test'] = 1;
+        }
+
+        if ($this->from || $sms->from) {
+            $data['from'] = $this->from ? : $sms->from;
         }
 
         return $this->apiCall("sms/send", $data);
